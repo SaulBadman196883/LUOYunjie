@@ -35,8 +35,8 @@ Skills
 * LaTeX
 * Languages
   * Chinese (native)
-  * English ((upper-intermediate)
-  * French ((upper-intermediate)
+  * English (upper-intermediate)
+  * French  (upper-intermediate)
 
 <!--
 Publications
