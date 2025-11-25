@@ -8,6 +8,6 @@ author_profile: false
 {% include base_path %}
 {% for post in site.pages %}
   {% unless post.url contains "talkmap" %}
-    {% include archive-single.html 
+    {% include archive-single.html %}
   {% endunless %}
 {% endfor %}
