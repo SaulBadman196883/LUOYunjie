@@ -13,17 +13,17 @@
         /* 右上角图片样式 */
         .profile-image {
             float: right;          /* 浮动到右上角 */
-            width: 130px;         /* 图片宽度 */
+            width: 200px;         /* 图片宽度 */
             height: auto;         /* 高度自动 */
             border-radius: 50%;   /* 圆形裁剪（可改为 8px 圆角矩形） */
-            margin: 10px 0 20px 20px; /* 上 右 下 左 间隔，保持和文字的距离 */
-            box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+            margin: 10px 20px 20px 20px; /* 上 右 下 左 间隔，保持和文字的距离 */
+            box-shadow: -4px 4px 12px rgba(0,0,0,0.1);
             object-fit: cover;    /* 保证图片比例不变形 */
         }
         /* 小屏幕适配：图片稍微缩小 */
         @media (max-width: 600px) {
             .profile-image {
-                width: 90px;
+                width: 100px;
                 margin: 5px 0 15px 15px;
             }
         }
@@ -31,12 +31,16 @@
         h1, p, h2, h3 {
             overflow: hidden;      /* 简单清理浮动影响，保持块级元素背景完整 */
         }
+        /* 链接样式：使用浏览器默认颜色 */
         a {
-            color: #0066cc;
-            text-decoration: none;
+            color: #0000EE;        /* 未访问链接：默认蓝色 */
+            text-decoration: none;  /* 去掉下划线 */
+        }
+        a:visited {
+            color: #551A8B;        /* 已访问链接：默认紫色 */
         }
         a:hover {
-            text-decoration: underline;
+            text-decoration: underline;  /* 悬停时显示下划线（颜色保持不变） */
         }
     </style>
 </head>
