@@ -1,65 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+
 <head>
-<title>Yunjie LUO</title>
-    <style>
-        /* 设置整体页面样式，让内容更舒适 */
-        body {
-            max-width: 1200px;
-            margin: 20px auto;
-            padding: 20px;
-            line-height: 1.5;
-            position: relative;
-        }
-        /* 右上角图片样式 */
-        .profile-image {
-            float: right;          /* 浮动到右上角 */
-            width: 250px;         /* 图片宽度 */
-            height: auto;         /* 高度自动 */
-            border-radius: 50%;   /* 圆形裁剪（可改为 8px 圆角矩形） */
-            margin: 10px 20px 20px 20px; /* 上 右 下 左 间隔，保持和文字的距离 */
-            box-shadow: -4px 4px 12px rgba(0,0,0,0.1);
-            object-fit: cover;    /* 保证图片比例不变形 */
-        }
-        /* 小屏幕适配：图片稍微缩小 */
-        @media (max-width: 600px) {
-            .profile-image {
-                width: 100px;
-                margin: 5px 0 15px 15px;
-            }
-        }
-        /* 确保标题不会和图片重叠得太厉害（图片浮动后标题会自动环绕，无需额外设定） */
-        h1, p, h2, h3 {
-            overflow: hidden;      /* 简单清理浮动影响，保持块级元素背景完整 */
-        }
-        /* 链接样式：使用浏览器默认颜色 */
-        a {
-            color: #0000EE;        /* 未访问链接：默认蓝色 */
-            text-decoration: none;  /* 去掉下划线 */
-        }
-        a:visited {
-            color: #551A8B;        /* 已访问链接：默认紫色 */
-        }
-        a:hover {
-            text-decoration: underline;  /* 悬停时显示下划线（颜色保持不变） */
-        }
-    </style>
+<meta charset="UTF-8">
+<title>Yunjie Luo</title>
+
+<style>
+
+body{
+    max-width:850px;
+    margin:40px auto;
+    padding:20px;
+    line-height:1.6;
+    font-family:Georgia,"Palatino Linotype","Times New Roman",serif;
+    color:#222;
+}
+
+/* ---------- Header ---------- */
+
+header{
+    display:flex;
+    justify-content:space-between;
+    align-items:flex-start;
+    gap:30px;
+}
+
+.header-text{
+    flex:1;
+}
+
+.profile-image{
+    width:180px;
+    height:auto;
+    border-radius:8px;
+    object-fit:cover;
+    box-shadow:-4px 4px 12px rgba(0,0,0,0.12);
+}
+
+/* ---------- Typography ---------- */
+
+h1{
+    margin-top:0;
+    margin-bottom:0.4em;
+    font-size:2.0em;
+}
+
+h2{
+    margin-top:1.8em;
+    padding-bottom:0.2em;
+    border-bottom:1px solid #dddddd;
+}
+
+h3{
+    margin-top:1.2em;
+}
+
+/* ---------- Links ---------- */
+
+a{
+    color:#0000EE;
+    text-decoration:none;
+}
+
+a:visited{
+    color:#551A8B;
+}
+
+a:hover{
+    text-decoration:underline;
+}
+
+/* ---------- Footer ---------- */
+
+footer{
+    margin-top:50px;
+    padding-top:10px;
+    border-top:1px solid #dddddd;
+    font-size:0.95em;
+    color:#666666;
+}
+
+/* ---------- Mobile ---------- */
+
+@media (max-width:700px){
+
+header{
+    flex-direction:column-reverse;
+}
+
+.profile-image{
+    width:140px;
+}
+
+}
+
+</style>
+
 </head>
+
 <body>
-	<img class="profile-image" 
-         src="./photo.JPG"  
-         alt="A photo of me"
-         title="Shot in Montmartre on April 28th, 2026.">
-	<h1>Yunjie LUO - 罗云杰 </h1>
-	<p> I'm now a student of  <a href="https://www.polytechnique.edu/">École Polytechnique</a>. <br>
-	Email: yunjie.luo[at]polytechnique.org <br>
-	</p>
-	<h3><a href="./CV_en.pdf">Curriculum Vitae</a> (last updated Apr. 17, 2026) </h3>  
-	<h2>Research </h2>
-	My research interests are number theory and combinatorics. <br>
-	<B> <a href="./papers.html">Papers</a> </B> <br>
-	
-	<h2><a href="./talks.html">Talks</a> </h2>
-	
-    <h2><a href="./notes.html">Notes</a> </h2>
-	
-	
-	
+
+<header>
+
+<div class="header-text">
+
+<h1>Yunjie Luo (罗云杰)</h1>
+
+<p>
+I am currently a student at
+<a href="https://www.polytechnique.edu/">
+École Polytechnique
+</a>.
+<br>
+
+Email:
+yunjie.luo[at]polytechnique.org
+</p>
+
+<h3>
+<a href="./CV_en.pdf">
+Curriculum Vitae
+</a>
+(last updated Apr. 17, 2026)
+</h3>
+
+</div>
+
+<img
+class="profile-image"
+src="./photo.JPG"
+alt="A photo of me"
+title="Shot in Montmartre on April 28th, 2026.">
+
+</header>
+
+<main>
+
+<h2>Research</h2>
+
+<p>
+My research interests are broadly in number theory and combinatorics.
+</p>
+
+<p>
+<b><a href="./papers.html">Papers</a></b>
+</p>
+
+<h2>
+<a href="./talks.html">
+Talks
+</a>
+</h2>
+
+<h2>
+<a href="./notes.html">
+Notes
+</a>
+</h2>
+
+</main>
+
+<footer>
+
+Last updated: July 22, 2026.
+
+</footer>
+
+</body>
+
+</html>	
