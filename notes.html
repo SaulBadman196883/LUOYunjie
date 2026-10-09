@@ -1,89 +1,171 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-<meta charset="UTF-8">
-<title>Notes</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Notes</title>
+    <style>
+        * {
+            box-sizing: border-box;
+        }
 
-<style>
+        body {
+            max-width: 850px;
+            margin: 48px auto;
+            padding: 0 24px 32px;
+            font-family: Georgia, "Palatino Linotype", "Times New Roman", serif;
+            font-size: 17px;
+            line-height: 1.65;
+            color: #252525;
+            background: #ffffff;
+        }
 
-body{
-    max-width:850px;
-    margin:40px auto;
-    padding:20px;
-    line-height:1.6;
-    font-family:Georgia,"Palatino Linotype","Times New Roman",serif;
-    color:#222;
-}
+        h1, h2, h3 {
+            line-height: 1.3;
+        }
 
-h2{
-    margin-top:0;
-    padding-bottom:0.2em;
-    border-bottom:1px solid #dddddd;
-}
+        h1 {
+            margin: 0 0 36px;
+            font-size: 2.25rem;
+            font-weight: 700;
+        }
 
-a{
-    color:#0000EE;
-    text-decoration:none;
-}
+        h2 {
+            margin: 40px 0 24px;
+            padding-bottom: 10px;
+            border-bottom: 1px solid #dddddd;
+            font-size: 1.5rem;
+            font-weight: 700;
+        }
 
-a:visited{
-    color:#551A8B;
-}
+        h3 {
+            margin: 28px 0 14px;
+            font-size: 1.125rem;
+            font-weight: 700;
+        }
 
-a:hover{
-    text-decoration:underline;
-}
+        .note-list {
+            margin: 0;
+            padding: 0;
+            list-style: none;
+        }
 
-</style>
+        .note-list li {
+            margin-bottom: 18px;
+        }
 
+        .note-title {
+            font-weight: 700;
+            overflow-wrap: anywhere;
+        }
+
+        a {
+            color: #174b91;
+            text-decoration: none;
+            text-underline-offset: 3px;
+        }
+
+        a:visited {
+            color: #654780;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        a:focus-visible {
+            outline: 2px solid #174b91;
+            outline-offset: 4px;
+            border-radius: 2px;
+            text-decoration: underline;
+        }
+
+        .note-meta {
+            display: block;
+            margin-top: 3px;
+            font-size: 0.875rem;
+            color: #666666;
+        }
+
+        .empty-state {
+            margin: 0;
+            color: #666666;
+            font-size: 0.9375rem;
+            font-style: italic;
+        }
+
+        @media (max-width: 600px) {
+            body {
+                margin: 28px auto;
+                padding: 0 20px 24px;
+                font-size: 16px;
+            }
+
+            h1 {
+                margin-bottom: 28px;
+                font-size: 2rem;
+            }
+
+            h2 {
+                margin-top: 32px;
+                font-size: 1.375rem;
+            }
+        }
+    </style>
 </head>
-
 <body>
+    <main>
+        <h1>Notes</h1>
 
-<h2>Notes</h2>
+        <section aria-labelledby="mathematics">
+            <h2 id="mathematics">Mathematics</h2>
 
-<p>
-<b><a href="./notes/ASummaryofComplexAnalysis.pdf">
-A Summary of Complex Analysis
-</a></b>
-(last updated Aug. 10, 2026)
-</p>
+            <h3>Course Notes</h3>
+            <ul class="note-list" role="list">
+                <li>
+                    <a class="note-title" href="./notes/ASummaryofComplexAnalysis.pdf">A Summary of Complex Analysis</a>
+                    <span class="note-meta">Last updated <time datetime="2026-08-10">August 10, 2026</time></span>
+                </li>
+                <li>
+                    <a class="note-title" href="./notes/ASummaryofPDE.pdf">A Summary of PDE</a>
+                    <span class="note-meta">Last updated <time datetime="2026-08-10">August 10, 2026</time></span>
+                </li>
+            </ul>
 
-<p>
-<b><a href="./notes/ASummaryofPDE.pdf">
-A Summary of PDE
-</a></b>
-(last updated Aug. 10, 2026)
-</p>
+            <h3>Survey</h3>
+            <ul class="note-list" role="list">
+                <li>
+                    <a class="note-title" href="./notes/Histoire.pdf">A History of the Gross–Zagier Formula</a>
+                    <span class="note-meta">Written in French · Last updated <time datetime="2026-08-25">August 25, 2026</time></span>
+                </li>
+                <li>
+                    <a class="note-title" href="./notes/THEALON-JAEGER-TARSICONJECTURE.pdf">The Alon-Jaeger-Tarsi Conjecture</a>
+                    <span class="note-meta">Last updated <time datetime="2026-09-05">September 5, 2026</time></span>
+                </li>
+            </ul>
 
-<p>
-<b><a href="./notes/Histoire.pdf">
-A History of the Gross–Zagier Formula
-</a></b>
-(written in French, last updated Aug. 25, 2026)
-</p>
+            <h3>Others</h3>
+            <ul class="note-list" role="list">
+                <li>
+                    <a class="note-title" href="./notes/rapport%20final.pdf">Functional Equation of the Hecke L-Function via Adelic Integration</a>
+                    <span class="note-meta">Written in French · Last updated <time datetime="2026-04-26">April 26, 2026</time></span>
+                </li>
+                <li>
+                    <a class="note-title" href="./notes/basic.pdf">A Collection of Elementary Mathematics Exercises</a>
+                    <span class="note-meta">Written in Chinese · Last updated <time datetime="2026-08-27">August 27, 2026</time></span>
+                </li>
+            </ul>
+        </section>
 
-<p>
-<b><a href="./notes/rapport final.pdf">
-Functional Equation of the Hecke L-Function via Adelic Integration
-</a></b>
-(written in French, last updated Apr. 26, 2026)
-</p>
+        <section aria-labelledby="applied-mathematics">
+            <h2 id="applied-mathematics">Applied Mathematics</h2>
+            <p class="empty-state">No notes yet.</p>
+        </section>
 
-<p>
-<b><a href="./notes/basic.pdf">
-A Collection of Elementary Mathematics Exercises (初等数学习题集)
-</a></b>
-(written in Chinese, last updated Aug. 27, 2026)
-</p>
-
-<p>
-<b><a href="./notes/THEALON-JAEGER-TARSICONJECTURE.pdf">
-The Alon-Jaeger-Tarsi Conjecture 
-</a></b>
-(last updated Sep. 5, 2026)
-</p>
+        <section aria-labelledby="computer-science">
+            <h2 id="computer-science">Computer Science</h2>
+            <p class="empty-state">No notes yet.</p>
+        </section>
+    </main>
 </body>
-
 </html>
